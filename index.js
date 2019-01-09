@@ -4,3 +4,7 @@ function getRepositories(){
   req.open('GET', 'https://api.github.com/users/alexandrafren/repos');
   req.send();
 }
+
+function showRepositories(){
+  console.log(this.responseText);
+}
